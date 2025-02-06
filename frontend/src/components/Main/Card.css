@@ -1,0 +1,9 @@
+.content-img {
+    border-radius: 9px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 360px;
+    height: 300px;
+}
+

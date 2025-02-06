@@ -1,0 +1,70 @@
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main > div:nth-child(odd) {
+    background-color: #0a142d;
+}
+
+.main > div:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+@media (max-width: 650px) {
+    .cover {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        padding: 50px 0px !important;
+    }
+
+    .main .cover .cover-img {
+        background-size: cover;
+        background-position: center;
+        margin-top: 50px;
+        height: 400px;
+        width: 300px;
+    }
+    .main .cover .cover-text {
+        font-size: 14px;
+        width: 80%;
+    }
+
+    .main .cover .cover-text .cover-text-paragraph {
+        font-size: 14px;
+        margin-right: 0px;
+    }
+
+    .main .cover div.cover-text.about-text {
+        text-align: left;
+    }
+
+    .main .cover .about-img {
+        background-size: cover;
+        background-position: center;
+        margin-top: 50px;
+        height: 400px;
+        width: 300px;
+    }
+
+    .contents {
+        margin: 50px 10px !important;
+    }
+
+    .contents-pages {
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 40px !important; 
+    }
+
+    .contents-pages > div {
+        margin: 10px 0px !important;
+    }
+
+    .main .contents .contents-pages .content-img {
+        width: 320px;
+        height: 260px;
+    }
+}

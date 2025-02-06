@@ -1,0 +1,42 @@
+.scoreboard {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+
+    /* padding: 100px 0px; */
+}
+
+.scoreboard > .scoreboard-text {
+    width: 50%;
+}
+
+.scoreboard > .scoreboard-text > *{
+    margin: 10px 0px;
+}
+
+.scoreboard  .title {
+    font-weight: bold;
+    font-size: 2.3em;
+}
+
+.scoreboard .score {
+    font-weight: bold;
+    font-size: 3em;
+    color: #389f0b;
+    /* color: #ff3131; */
+}
+
+.scoreboard .description {
+    font-size: 1.30em;
+}
+
+.scoreboard .score-img {
+    background-image: url('../../assets/imgs/Muslim\ graduation-bro.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 500px;
+}
+

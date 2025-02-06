@@ -1,0 +1,70 @@
+.cover {
+    display: flex;
+    padding: 100px;
+}
+
+.cover .cover-text, .cover-list{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    color: #f2f2f2;
+}
+
+.cover .cover-list .title-1 {
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    color: #153361;
+}
+
+.cover .cover-list .cover-text-paragraph {
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    margin-right: 100px;
+    color: #000;
+    text-align: justify;
+}
+
+.cover .cover-list ul {
+    color: #0e2342;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.cover .cover-text .cover-text-paragraph {
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    margin-right: 100px;
+    text-align: justify;
+}
+
+.cover .cover-text > span , .cover-list > span{
+    margin: 10px 0px;
+}
+
+.cover .cover-img {
+    background-image: url('../assets/imgs/English\ teacher-pana\ \(1\).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: max;
+    flex-grow: 1;
+}
+
+.cover .about-img {
+    background-image: url('../assets/imgs/English\ teacher-amico\ \(1\).png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: max;
+    flex-grow: 1;
+}
+
+.cover .motiv-img {
+    background-image: url('../assets/imgs/Version\ control-bro.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: max;
+    flex-grow: 1;
+}

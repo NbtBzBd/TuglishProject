@@ -1,0 +1,8 @@
+div.container-materials {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 40px;
+    padding: 50px;
+}

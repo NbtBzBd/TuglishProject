@@ -1,0 +1,92 @@
+@font-face {
+    font-family: work-sans;
+    src: url('./components/assets/fonts/WorkSans-VariableFont_wght.ttf');
+}
+
+* {
+    font-family: work-sans;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px auto 1fr
+}
+
+div.title {
+    font-size: 2rem;
+    color: var(--font-color);
+    font-weight: bolder;
+    align-items: center;
+}
+
+body div.title span {
+    text-shadow: #828282 2px 2px 0px;
+}
+
+body div.title .sub-title {
+    margin-top: 3px;
+    font-size: 9px;
+    font-weight: 300;
+}
+
+body div.title .text-title {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.base-bg-color-7 {
+    background-color: #eaeaea;
+} 
+
+.p-color-1 {
+    color: #01202e;
+}
+
+.btn-normal {
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 30px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.p-color-1.btn-normal:hover {
+    background-color: #bdbdbd;
+}
+
+.paragrafo-1 {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.title-1 {
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    
+}
+
+.title-2 {
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    color: #153361;
+}
+
+.p-bg-color-2 {
+    background-color: #153361;
+}
+
+.p-bg-color-2:hover {
+    background-color: #0e2342;
+}
+
+.base-color-9 {
+    color: #fafafa;
+}

@@ -1,0 +1,39 @@
+.contents .card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #dfdfdf;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.contents div.cards > div {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 60px 60px;
+    margin: 0px 20px;
+    
+}
+
+.card1-img, .card2-img, .card3-img {
+    width: 100%;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card1-img {
+    background-image: url('../assets/imgs/Vector.png');
+}
+
+.card2-img {
+    background-image: url('../assets/imgs/Vector1.png');
+}
+
+.card3-img {
+    background-image: url('../assets/imgs/Vector2.png');
+}

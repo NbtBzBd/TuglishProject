@@ -1,0 +1,18 @@
+.title-generic {
+    height: 250px;
+    background-color: #0a142d;
+    color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+}
+
+.title-generic > .title {
+    font-size: 2.8em;
+}
+
+.title-generic > .subtitle {
+    width: 55%;
+    font-size: 1.30em;
+}

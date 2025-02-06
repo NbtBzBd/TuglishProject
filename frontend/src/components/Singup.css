@@ -1,0 +1,54 @@
+.singup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0px;
+    background-color: #f5f5f5;
+}
+
+.singup-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.singup-img {
+    width: 50%;
+    background-image: url('./assets/imgs/Enter OTP-bro.png');
+    height: 500px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.singup-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.singup-title {
+    color: #153361;
+    font-weight: bold;
+    font-size: 2.5em;
+
+}
+
+.singup-subtitle {
+    color: #435b77;
+    font-size: 1.5em;
+}
+
+.singup-inputs {  
+    margin-top: 15px; 
+    width: 80%;
+}
+
+.singup-inputs > * {
+    font-size: 1.2em;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin: 15px 0px;
+    border: none;
+    background-color: #eaeaea;
+}

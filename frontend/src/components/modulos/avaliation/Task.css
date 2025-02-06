@@ -1,0 +1,25 @@
+.task *{
+    margin: 10px 0px;
+}
+
+.task-text {
+    font-size: 1.3em;
+}
+
+.task-title {
+    font-size: 1.7em;
+}
+
+.task-button {
+    font-size: 1em;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: start;
+    border: none;
+    background-color: #eaeaea;
+}
+
+.task-button:hover {
+    background-color: #cec9c9;
+}

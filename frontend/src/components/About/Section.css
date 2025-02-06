@@ -1,0 +1,74 @@
+.about .section {
+    display: flex;
+    padding: 50px 100px;
+    align-items: center;
+}
+
+.about .section .section-text, .section-list{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    color: #f2f2f2;
+}
+
+.about .section .section-list .title-1 {
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    color: #153361;
+}
+
+.about .section .section-list .section-text-paragraph {
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    margin-right: 100px;
+    color: #000;
+    text-align: justify;
+}
+
+.about .section .section-list ul {
+    color: #0e2342;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.about .section .section-text .section-text-paragraph {
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    margin-right: 100px;
+    text-align: justify;
+}
+
+.section .section-text > span , .section-list > span{
+    margin: 10px 0px;
+}
+
+.about .section .section-img {
+    width: 50%;
+}
+
+.about .section .section-img {
+    width: 50%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 450px;
+}
+
+.about .section .img1 {
+    background-image: url('../assets/imgs/English\ teacher-bro.png');
+
+}
+
+.about .section .img2 {
+    background-image: url('../assets/imgs/Coding\ workshop-amico\ \(2\).png');
+    height: 550px;
+}
+
+.about .section .img3 {
+    background-image: url('../assets/imgs/college campus-rafiki.png');
+}
+
+.about .section .img4 {
+    background-image: url('../assets/imgs/Connected world-amico.png');
+}
