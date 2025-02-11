@@ -44,6 +44,8 @@ export default function() {
             passwordValidation();
             comfirmValidation();
         }
+
+        console.log()
         
     }
     function showError(index) {
