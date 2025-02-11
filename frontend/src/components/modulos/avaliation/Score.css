@@ -23,7 +23,6 @@
 .scoreboard .score {
     font-weight: bold;
     font-size: 3em;
-    color: #389f0b;
     /* color: #ff3131; */
 }
 
@@ -31,12 +30,20 @@
     font-size: 1.30em;
 }
 
-.scoreboard .score-img {
-    background-image: url('../../assets/imgs/Muslim\ graduation-bro.png');
+.scoreboard .score-imgSucess, .scoreboard .score-imgLose {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     width: 50%;
     height: 500px;
+}
+
+.scoreboard .score-imgSucess {
+    background-image: url('../../assets/imgs/Muslim\ graduation-bro.png');
+
+}
+
+.scoreboard .score-imgLose {
+    background-image: url('../../assets/imgs/Student\ stress-bro.png');
 }
 

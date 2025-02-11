@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Cover from "./Main/Cover";
 import Contents from "./Main/Contents";
 import Card from "./Main/Card";
@@ -6,11 +6,24 @@ import Block from "./Main/Block";
 import { Link } from "react-router";
 import ModulosCards from "./Main/ModulosCards";
 import { cover1, cover2, cover3, content1, content2, content3 } from "./Main/Util";
+import { ToastContainer, toast } from 'react-toastify';
 import './Main.css';
 
 export default function() {
-    window.scrollTo(0, 0);
-    return <main className="main">
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        const msg = localStorage.getItem('msg');
+        if (msg) {
+            toast.success(msg, {
+                position: 'top-center',
+            });
+            localStorage.removeItem('msg');
+        }
+    }, [])
+    
+    return <>
+    <ToastContainer />
+    <main className="main">
         <Cover title={cover1.title} paragraph={cover1.paragraph} classStyle="cover-text" img="cover-img">
             <Link to="/singup"><button className="btn-normal p-color-1">COMECE AGORA</button></Link>
         </Cover>
@@ -45,4 +58,5 @@ export default function() {
             <Block classNum="card3-img" text="Oportunidade de carreira" subText={content3.c3} />
         </Contents>
     </main>
+    </>
 }

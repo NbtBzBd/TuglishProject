@@ -9,8 +9,11 @@ class AlunoController {
     }
     
     selectOne(req, res) {
-        const { id } = req.params;
-        const result = model.selectOne(id);
+        const dados = {
+            email: req.query.email,
+            senha: req.query.password
+        };
+        const result = model.selectOne(dados);
         result
         .then(r => res.status(200).json(r))
         .catch(r => res.status(400).json(r));

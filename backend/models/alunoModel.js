@@ -18,9 +18,9 @@ class AlunoModel {
         return this.exectQuery(query, {});
     }
 
-    selectOne(id) {
-        const query = 'SELECT * FROM alunos WHERE id = ?';
-        return this.exectQuery(query, id);
+    selectOne(dados) {
+        const query = 'SELECT * FROM alunos WHERE email = ? AND senha = ?';
+        return this.exectQuery(query, [dados.email, dados.senha]);
     }
 
     create(aluno) {

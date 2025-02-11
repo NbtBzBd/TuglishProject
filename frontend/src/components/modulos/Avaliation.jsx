@@ -8,13 +8,26 @@ export default class Avaliation extends Component {
 
     state = {
         score: 0,
-        lasted: 10
+        lasted: 10,
+        img: '',
+        description: ''
     }
 
     decrementLasted() {
         this.setState({lasted: this.state.lasted - 1});
         if (this.state.lasted == 1) {
-            document.querySelector('.scoreboard').style.display = 'flex';
+            const scoreboard = document.querySelector('.scoreboard')
+            if (this.state.score > 5) {
+                scoreboard.querySelector('.score').style.color = '#389f0b';
+                this.state.description = 'Parabens! Vc é foda man! Continue assim, vc está indo muito bem'
+                this.state.img = 'score-imgSucess';
+            } else {
+                scoreboard.querySelector('.score').style.color = '#ff3131';
+                this.state.description = 'kkkkkkkkkkkkkkkkkk i alá o burrão kkkkkkkkkkkkkkkkkk';
+                this.state.img = 'score-imgLose';
+            }
+            scoreboard.style.display = 'flex';
+            
         }
     }
 
@@ -39,7 +52,7 @@ export default class Avaliation extends Component {
                 <Question decrement={this.decrementLasted.bind(this)} increment={this.incrementScore.bind(this)} num='tsk8' />
                 <Question decrement={this.decrementLasted.bind(this)} increment={this.incrementScore.bind(this)} num='tsk9' />
                 <Question decrement={this.decrementLasted.bind(this)} increment={this.incrementScore.bind(this)} num='tsk10' />
-                <Score score={this.state.score}/>
+                <Score score={this.state.score} img={this.state.img} description={this.state.description}/>
             </div>
         </main>
     }

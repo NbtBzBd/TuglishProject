@@ -3,7 +3,7 @@ const controller = require('../controllers/alunoController');
 
 endpoints.get('/api/alunos', controller.selectAll);
 
-endpoints.get('/api/aluno/:id', controller.selectOne)
+endpoints.get('/api/aluno', controller.selectOne);
 
 endpoints.post('/api/aluno', controller.create);
 
