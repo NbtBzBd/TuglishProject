@@ -6,6 +6,7 @@ import About from './components/About';
 import Avaliation from "./components/modulos/Avaliation";
 import Singup from "./components/Singup";
 import Login from "./components/Login";
+import Modules from "./components/Modules";
 
 export default function() {
     return <Routes>
@@ -16,6 +17,7 @@ export default function() {
         <Route path="/module/avl" element={<Avaliation />} />
         <Route path="/singup" element={<Singup />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/modules" element={<Modules />} />
     </Routes>
     
 }

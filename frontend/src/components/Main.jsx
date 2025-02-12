@@ -28,13 +28,13 @@ export default function() {
             <Link to="/singup"><button className="btn-normal p-color-1">COMECE AGORA</button></Link>
         </Cover>
 
-        <Contents title={content1.title} button="MAIS CONTÉUDOS">
+        <Contents title={content1.title} link="/materials" button="MAIS CONTÉUDOS">
             <Card paragraph={content1.c1} />
             <Card paragraph={content1.c2} />
             <Card paragraph={content1.c3} />
         </Contents>
 
-        <Contents color="alternative" padding title={content2.title} button="ACESSAR MÓDULOS">
+        <Contents color="alternative" padding title={content2.title} link="/modules" button="ACESSAR MÓDULOS">
             <ModulosCards />
             <ModulosCards />
             <ModulosCards />

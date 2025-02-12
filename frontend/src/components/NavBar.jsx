@@ -15,7 +15,7 @@ export default function() {
             <div>
                 <Link to="/">Home</Link>
                 <Link to="/materials">Materiais</Link>
-                <Link to="/">Unidades</Link>
+                <Link to="/modules">Unidades</Link>
                 <Link to="/about">Sobre</Link>
                 <Link to="/login">Login</Link>
                 <Link to="/singup"><button className="btn-normal p-color-1">CADASTRO</button></Link>

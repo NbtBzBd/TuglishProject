@@ -1,0 +1,8 @@
+main.modules {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 60px;
+    row-gap: 40px;
+    padding: 50px;
+}

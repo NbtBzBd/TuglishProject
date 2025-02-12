@@ -15,7 +15,7 @@ export default class Avaliation extends Component {
 
     decrementLasted() {
         this.setState({lasted: this.state.lasted - 1});
-        if (this.state.lasted == 1) {
+        if (this.state.lasted == 8) {
             const scoreboard = document.querySelector('.scoreboard')
             if (this.state.score > 5) {
                 scoreboard.querySelector('.score').style.color = '#389f0b';
@@ -52,9 +52,11 @@ export default class Avaliation extends Component {
                 <Question decrement={this.decrementLasted.bind(this)} increment={this.incrementScore.bind(this)} num='tsk8' />
                 <Question decrement={this.decrementLasted.bind(this)} increment={this.incrementScore.bind(this)} num='tsk9' />
                 <Question decrement={this.decrementLasted.bind(this)} increment={this.incrementScore.bind(this)} num='tsk10' />
-                <Score score={this.state.score} img={this.state.img} description={this.state.description}/>
+                <Score score={this.state.score} img={this.state.img} description={this.state.description}>
+                    <button className="btn-normal p-bg-color-2 base-color-9">PRÓXIMO MÓDULO</button>
+                </Score>
             </div>
         </main>
     }
 
-}
+} 

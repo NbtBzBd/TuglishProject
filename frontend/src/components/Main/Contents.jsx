@@ -10,7 +10,7 @@ export default function(props) {
                 {props.children}       
             </div>
             <div>
-                <Link to="/materials">
+                <Link to={props.link}>
                     <button className={"btn-normal p-bg-color-2 base-color-9 "+ alt}>
                         {props.button}
                     </button>

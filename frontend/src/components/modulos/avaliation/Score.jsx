@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import './Score.css';
 
-export default function({score, img, description}) {
+export default function({score, img, description, children}) {
 
     return <section hidden className="scoreboard">
         <div className="scoreboard-text">
@@ -10,7 +10,7 @@ export default function({score, img, description}) {
             <p className="description">
                 {description}
             </p>
-            <button className="btn-normal p-bg-color-2 base-color-9">PRÓXIMO MÓDULO</button>
+            {children}
         </div>
         <div className={img}></div>
     </section>

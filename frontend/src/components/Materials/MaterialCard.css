@@ -1,4 +1,4 @@
-.mod-card {
+.material-card {
     background-color: #eaeaea;
     border-radius: 20px;
     display: flex !important;
@@ -11,11 +11,11 @@
     box-shadow: rgba(0, 0, 0, 0.15) 10px 10px 2.6px;
 }
 
-.mod-card > div {
+.material-card > div {
     margin: 15px 0px;
 }
 
-.mod-card .img {
+.material-card .img {
     height: 120px;
     width: 100%;
     flex-grow: 1;
@@ -24,17 +24,17 @@
     background-position: center;
 }
 
-.mod-card .modulo {
+.material-card .material {
     color: #153361;
     font-weight: bold;
     font-size: 22px;
 }
 
-.mod-card .text {
+.material-card .text {
     color: #153361;
 }
 
-.mod-card .button {
+.material-card .button {
     color: #f2f2f2;
     font-size: 14px;
     padding: 9px 14px;
