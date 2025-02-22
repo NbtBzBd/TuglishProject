@@ -7,13 +7,15 @@ import './Modules.css';
 const Modules = () => {
 
     useEffect(() => {
+
         window.scrollTo(0, 0);
     },[])
     
     let modules = [];
     for (let i = 0; i < 9; i++) {
-        modules.push(<ModulosCards />);
+        modules.push(<ModulosCards key={i} />);
     }
+
     return <>
     <Title title={<>Comece a aprender agora!</>} subtitle={<>Explore os nossos módulos e comece a aprender inglês
         de forma simples e intuitiva.</>} />
@@ -22,4 +24,3 @@ const Modules = () => {
     </main>
     </>
 }
-export default Modules;
