@@ -4,40 +4,67 @@
     display: flex !important;
     flex-direction: column;
     align-items: center;
-    width: 350px;
+    justify-content: center;
+    width: 450px;
     text-align: center;
-    padding: 10px;
-    height: 450px;
+    padding: 20px;
+    height: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mod-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .mod-card .img {
     height: 180px;
-    width: 85%;
+    width: 100%;
     flex-grow: 1;
     background-image: url('../assets/imgs/Chat\ bot-bro\ \(1\).png');
     background-size: cover;
     background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    margin-bottom: 15px;
 }
 
 .mod-card .modulo {
     color: #153361;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 26px;
+    margin-bottom: 10px;
 }
 
 .mod-card .text {
     color: #153361;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    padding: 0 15px;
 }
 
 .mod-card .button {
     color: #f2f2f2;
-    font-size: 14px;
-    padding: 9px 14px;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 25px;
+    background-color: #153361;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.mod-card .button:hover {
+    background-color: #1a4a8a;
 }
 
 .alternative {
     background-color: #f2f2f2;
     color: #153361;
+    transition: background-color 0.3s ease;
 }
 
 .alternative:hover {

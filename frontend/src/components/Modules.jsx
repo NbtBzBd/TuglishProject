@@ -4,10 +4,9 @@ import ModulosCards from "./Main/ModulosCards";
 import Title from "./Title";
 import './Modules.css';
 
-export default function() {
+const Modules = () => {
 
     useEffect(() => {
-
         window.scrollTo(0, 0);
     },[])
     
@@ -15,7 +14,6 @@ export default function() {
     for (let i = 0; i < 9; i++) {
         modules.push(<ModulosCards />);
     }
-
     return <>
     <Title title={<>Comece a aprender agora!</>} subtitle={<>Explore os nossos módulos e comece a aprender inglês
         de forma simples e intuitiva.</>} />
@@ -24,3 +22,4 @@ export default function() {
     </main>
     </>
 }
+export default Modules;
