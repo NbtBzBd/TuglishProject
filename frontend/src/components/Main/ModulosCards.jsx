@@ -11,7 +11,7 @@ export default function ModulosCard() {
                 </div>
                 <div>
                     <button className="btn-normal p-bg-color-2 button">
-                        VER MÓDULO
+                        INICIAR
                     </button>
                 </div>
             </div>
