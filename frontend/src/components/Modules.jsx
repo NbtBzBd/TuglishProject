@@ -4,7 +4,7 @@ import ModulosCards from "./Main/ModulosCards";
 import Title from "./Title";
 import './Modules.css';
 
-export default function() {
+const Modules = () => {
 
     useEffect(() => {
 
