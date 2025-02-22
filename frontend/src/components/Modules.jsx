@@ -13,7 +13,7 @@ export default function() {
     
     let modules = [];
     for (let i = 0; i < 9; i++) {
-        modules.push(<ModulosCards />);
+        modules.push(<ModulosCards key={i} />);
     }
 
     return <>
