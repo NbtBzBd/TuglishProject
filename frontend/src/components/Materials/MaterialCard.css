@@ -1,22 +1,19 @@
 .material-card {
-    background-color: #eaeaea;
+    background-color: #f2f2f2;
     border-radius: 20px;
     display: flex !important;
     flex-direction: column;
     align-items: center;
+    width: 90%;
     text-align: center;
     padding: 10px;
-    height: 450px;
-    width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.15) 10px 10px 2.6px;
-}
+    height: 550px;
 
-.material-card > div {
-    margin: 15px 0px;
+    box-shadow: 10px 10px 0px 0px rgb(198, 198, 198);
 }
 
 .material-card .img {
-    height: 120px;
+    height: 180px;
     width: 100%;
     flex-grow: 1;
     background-image: url('../assets/imgs/Chat\ bot-bro\ \(1\).png');
@@ -48,4 +45,3 @@
 .alternative:hover {
     background-color: #bdbdbd;
 }
-

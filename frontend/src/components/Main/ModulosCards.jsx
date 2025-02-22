@@ -3,7 +3,7 @@ import './ModulosCards.css';
 
 export default function() {
     return <div className="mod-card">
-            <div className="img"></div>
+                <div className="img"></div>
                 <div className="modulo title-2">MÓDULO 1</div>
                 <div className="text">
                     Aprenda cognatos e formação depalavras 
